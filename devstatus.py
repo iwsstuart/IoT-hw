@@ -1,7 +1,7 @@
 import re
 import psutil
-# import misc
-# import socket
+import misc
+import socket
 from mylogger import iotlogger
 
 logger = iotlogger(loggername="DevStatus")
