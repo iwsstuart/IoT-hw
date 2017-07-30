@@ -33,9 +33,8 @@ def uploadStatus(status, server="http://localhost:8888/status_upload"):
     logger.debug("Uploading Status")
     c = pycurl.Curl()
     response = cStringIO.StringIO()
-
-##### use whatever server we have running...
-
+    
+    # need to specify the appropriate server and port here
     c.setopt(pycurl.URL, "http://localhost:8888/status_upload")
     c.setopt(pycurl.TIMEOUT, 5)
     c.setopt(
@@ -47,5 +46,3 @@ def uploadStatus(status, server="http://localhost:8888/status_upload"):
     c.perform()
     if response.getvalue() == 'OK':
         logger.info('Uploaded Device Status')
-
-##### uploadStatus(json.dumps(getStatus()))
