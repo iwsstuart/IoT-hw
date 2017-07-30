@@ -12,4 +12,4 @@ Another small module defining several functions used to get the status data obta
 Defines a logging function to be used when collecting real-time data and sending it to the server.
 
 #### plot.js
-A d3 script meant to take the device status data that was sent to the server by `client.py` and turn it into a real-time visualization. In this case it would be a plot of current CPU load. The data was sent to the server in json format, therefore `JSON.parse` is used to parse the JSON string to a javascript object. 
+A d3 script meant to take the device status data that was sent to the server by `client.py` and turn it into a real-time visualization. In this case it would be a plot of current CPU load. The data was sent to the server in json format, therefore `JSON.parse` is used to parse the JSON string to a javascript object. This script needs to be hooked up to html markup for visualization in the browser.
